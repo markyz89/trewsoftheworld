@@ -1,0 +1,8 @@
+Install Wordpress
+Create new theme folder
+Create style.css and index.php folders
+Enter required info in style.css
+Create header.php - enter standard HTML
+Create scripts function, include wp_enqueue_style('style', get_stylesheet_uri() within function
+Create action that hooks function - add_action('wp_enqueue_scripts', 'wp_trews_world_scripts');
+Call WP_head in the header - now you have a working stylesheet
