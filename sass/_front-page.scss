@@ -1,19 +1,36 @@
 .container {
 	display: flex;
 	width: 80%;
+	height: auto;
 	margin: 0 auto;
+	overflow: auto; 
 	.news-wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		width: 66.6%;
+		height: auto;
 		@media all and (max-width: 750px) {
 			width: 100%;
 		}
 		@import '_main-stories.scss';
+		.wide-advert {
+			display: flex;
+			width: 95%;
+			background: red;
+			margin: 0 0 10px 0;
+				h2 {
+			width: 100%;
+			color: #fff;
+			} 
+		}
+		@import '_small-stories.scss';
+		@import '_tall-tale.scss'
 	}
 	.front-page-sidebar {
 		display: flex;
 		width: 33.3%;
-		background-color: red;
+		background-color: blue;
+		color: #fff;
 		@media all and (max-width: 750px) {
 			display: none;
 			}

@@ -17,4 +17,5 @@ register_nav_menus(array(
 
 add_theme_support( 'post-thumbnails' );
 
-add_image_size( 'big-story-thumb', 285, 190, true); 
+add_image_size( 'big-story-thumb', 285, 190, true);
+add_image_size( 'small-story-thumb', 100, 120, true); 

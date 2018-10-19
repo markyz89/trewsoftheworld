@@ -1,7 +1,12 @@
 .two-main-stories {
 			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			width: 95%;
+			margin-right: 4%;
 			.main-story {
-				width: 45%;
-				margin-right: 5%;
+				width: 285px;
+				margin-right: 1%
+				
 			}
 		}

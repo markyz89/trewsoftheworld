@@ -1,0 +1,25 @@
+.small-stories {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 95%;
+	margin-right: 4%;
+	.small-story {
+		display: flex;
+		width: 285px;
+		margin-right: 1%;
+		.small-story-text {
+			margin: 0 3%;
+			h3 {
+				font-size: 14px;
+				font-weight: 900;
+				margin: 0;
+			}
+			p {
+				font-size: 12px;
+				margin: 10px 0 0 0;
+			}
+		}
+				
+	}
+}
