@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	.news-wrapper {
+		display: flex;
+		width: 66.6%;
+		@media all and (max-width: 750px) {
+			width: 100%;
+		}
+		@import '_main-stories.scss';
+	}
+	.front-page-sidebar {
+		display: flex;
+		width: 33.3%;
+		background-color: red;
+		@media all and (max-width: 750px) {
+			display: none;
+			}
+		}
+}
+
+
+
+

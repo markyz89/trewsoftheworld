@@ -9,7 +9,7 @@
 <body>
 
 <header>
-	<div class="container">
+	<div class="header-container">
 		<div class="search-div">
 			<form class="top-right-search">
 				<input type="search" name="site-search">
@@ -29,21 +29,10 @@
 
 		<hr class="menu-underline">
 		
-	</div>
+	</div> <!-- header-container -->
 	
 	
 
 	
 
 </header>
-
-
-
-
-
-
-
-
-
-
-<h1>Hello from header!</h1>

@@ -6,3 +6,6 @@ Create header.php - enter standard HTML
 Create scripts function, include wp_enqueue_style('style', get_stylesheet_uri() within function
 Create action that hooks function - add_action('wp_enqueue_scripts', 'wp_trews_world_scripts');
 Call WP_head in the header - now you have a working stylesheet
+
+Use the Wordpress Loop to get posts - if (have_posts()) while (have_posts()) etc
+Custom Loops - new WP Query - use this to customise the posts that are looped out, eg by category, tag, author.
