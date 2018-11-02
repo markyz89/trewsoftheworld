@@ -1,6 +1,9 @@
 <!-- Custom Query for two main stories -->
 		<!-- Consider using tags to choose the main stories in future -->
 		<?php $args = array( 'posts_per_page' => 2 ) ?>
+		<!-- 
+			this was to check the sports count variable
+			<?php // echo $sport_count ?> --->
 
 		<?php $main_stories = new WP_Query($args);
 
@@ -16,8 +19,20 @@
 
 
 				
-			<?php endwhile; 
+			<?php 
+			$categories = get_the_category();
+			if($categories[0]->name == 'Sport') {
+				$sport_count += 1;
+				// echo $sport_count;
+			}
+
+			// print_r(get_the_category());
+
+
+			endwhile; 
 			endif;
+			
+
 
 			wp_reset_postdata();
 			 ?>

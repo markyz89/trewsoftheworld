@@ -2,7 +2,7 @@
 		<!-- Consider using tags to choose the main stories in future -->
 		<?php $args = array( 
 			'posts_per_page' => 2,
-			'offset' => 2 
+			'offset' => get_query_var('offset_value') 
 		) ?>
 
 		<?php $main_stories = new WP_Query($args);
@@ -18,11 +18,19 @@
 					</div>
 				</div>
 
-
-
 				
-			<?php endwhile; 
+			<?php 
+
+			$categories = get_the_category();
+			if($categories[0]->name == 'Sport') {
+				$sport_count += 1;
+				// echo $sport_count;
+			}
+
+			endwhile; 
 			endif;
+
+
 
 			wp_reset_postdata();
 			 ?>

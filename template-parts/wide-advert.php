@@ -1,3 +1,3 @@
 <div class="wide-advert">
-	<h2>This is an advert that stretches the width of the news wrapper</h2>
+	<h2><?php echo get_query_var('ad_message', 'ad'); ?></h2>
 </div>

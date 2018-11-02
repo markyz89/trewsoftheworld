@@ -10,10 +10,17 @@ h3, a {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 95%;
-  margin-right: 4%; }
+  margin: 0 4% 0 0; }
   .two-main-stories .main-story {
     width: 285px;
     margin-right: 1%; }
+    .two-main-stories .main-story h3 {
+      font-size: 14px;
+      font-weight: 900;
+      margin: 0; }
+    .two-main-stories .main-story p {
+      font-size: 12px;
+      margin: 10px 0 0 0; }
 
 .container {
   display: flex;
@@ -34,18 +41,24 @@ h3, a {
       justify-content: space-between;
       flex-wrap: wrap;
       width: 95%;
-      margin-right: 4%; }
+      margin: 0 4% 0 0; }
       .container .news-wrapper .two-main-stories .main-story {
         width: 285px;
         margin-right: 1%; }
+        .container .news-wrapper .two-main-stories .main-story h3 {
+          font-size: 14px;
+          font-weight: 900;
+          margin: 0; }
+        .container .news-wrapper .two-main-stories .main-story p {
+          font-size: 12px;
+          margin: 10px 0 0 0; }
     .container .news-wrapper .wide-advert {
       display: flex;
-      width: 95%;
-      background: red;
-      margin: 0 0 10px 0; }
-      .container .news-wrapper .wide-advert h2 {
-        width: 100%;
-        color: #fff; }
+      width: 94%;
+      padding: 0 2%;
+      background: purple;
+      margin: 0 0 10px 0;
+      color: #fff; }
     .container .news-wrapper .small-stories {
       display: flex;
       justify-content: space-between;
@@ -65,17 +78,58 @@ h3, a {
           .container .news-wrapper .small-stories .small-story .small-story-text p {
             font-size: 12px;
             margin: 10px 0 0 0; }
-    .container .news-wrapper .tall-tale {
-      width: 285px;
-      height: 370px;
-      background-color: yellow; }
-  .container .front-page-sidebar {
+    .container .news-wrapper .tall-story {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .container .news-wrapper .tall-story .tall-tale {
+        width: 285px;
+        height: 560px;
+        background-color: yellow;
+        margin-bottom: 10px; }
+      .container .news-wrapper .tall-story .two-main {
+        max-width: 50%;
+        width: 285px;
+        margin-right: 1%;
+        margin: 0 5% 0 3%; }
+        .container .news-wrapper .tall-story .two-main h3 {
+          font-size: 14px;
+          font-weight: 900;
+          margin: 0; }
+        .container .news-wrapper .tall-story .two-main p {
+          font-size: 12px;
+          margin: 10px 0 0 0; }
+    .container .news-wrapper .sports-category .sports-banner {
+      display: flex;
+      width: 94%;
+      padding: 0 2%;
+      background: purple;
+      margin: 0 0 10px 0;
+      color: #fff;
+      background: green; }
+
+.front-page-sidebar {
+  display: flex;
+  width: 33.3%;
+  background-color: rgba(145, 193, 252, 0.4); }
+  @media all and (max-width: 750px) {
+    .front-page-sidebar {
+      display: none; } }
+  .front-page-sidebar li {
+    list-style: none; }
+  .front-page-sidebar .wide-advert {
     display: flex;
-    width: 33.3%;
-    background-color: blue;
-    color: #fff; }
-    @media all and (max-width: 750px) {
-      .container .front-page-sidebar {
-        display: none; } }
+    width: 94%;
+    padding: 0 2%;
+    background: purple;
+    margin: 0 0 10px 0;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    padding: 5% 5%;
+    margin: 20px 0; }
+  .front-page-sidebar .two-main-stories {
+    justify-content: space-around; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@mixin main-story() {
+	width: 285px;
+	margin-right: 1%
+}
+
+@mixin banner() {
+	display: flex;
+	width: 94%;
+	padding: 0 2%;
+	background: purple;
+	margin: 0 0 10px 0;
+	color: #fff;
+}

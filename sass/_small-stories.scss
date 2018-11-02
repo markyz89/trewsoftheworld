@@ -8,18 +8,7 @@
 		display: flex;
 		width: 285px;
 		margin-right: 1%;
-		.small-story-text {
-			margin: 0 3%;
-			h3 {
-				font-size: 14px;
-				font-weight: 900;
-				margin: 0;
-			}
-			p {
-				font-size: 12px;
-				margin: 10px 0 0 0;
-			}
-		}
+		@import '_small-text';
 				
 	}
 }
