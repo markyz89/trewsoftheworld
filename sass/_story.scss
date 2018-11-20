@@ -1,0 +1,17 @@
+.story-container {
+	@include container();
+	.story-wrapper {
+		display: flex;
+		.story {
+			display: flex;
+			flex-grow: 2;
+			margin-right: 20px;
+		}
+		.story-sidebar {
+			display: flex;
+			@include sidebar();
+			flex-grow: 1;
+			width: 100%;
+		}
+	}
+}

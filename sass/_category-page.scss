@@ -1,0 +1,36 @@
+.container {
+
+	.category-wrapper {
+		display: flex;
+
+
+		.left-main {
+			display: flex;
+			flex-grow: 2;
+		}
+		.right-4-stories {
+			margin-left: 2%;
+			flex-grow: 1;
+			display: flex;
+			
+			// flex-wrap: wrap;
+			width: 100%;
+			.four-stories-category {
+				display: flex;
+				flex-wrap: wrap;
+				.textual {
+					width: 50%;
+					display: flex;
+					a {
+						h3 {
+							margin-left: 10px;
+							width: 100%;
+							font-size: 14px;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}

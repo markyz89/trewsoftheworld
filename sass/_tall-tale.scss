@@ -4,3 +4,9 @@
 	background-color: yellow;
 	margin-bottom: 10px;
 }
+
+@media all and (max-width: 780px) {
+	.tall-tale {
+	margin: 0 auto;
+	}
+}	

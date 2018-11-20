@@ -1,0 +1,40 @@
+footer {
+	margin-top: 20px;
+	background-color: grey;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000; 
+
+	.container {
+		display: block;
+		.row {
+			width: 100%;
+			.menu-footer-menu-container {
+				width: 100%;
+				#secondary_menu {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+				}
+			}
+			
+			
+		}
+		.row {
+			margin-top: 20px;
+			.col-sm-3 {
+				border: 2px solid #000;
+			}
+			.footer-posts {
+				.two-main-stories {
+					.small-story {
+						.small-story-text {
+							h3 {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

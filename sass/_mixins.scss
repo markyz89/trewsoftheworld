@@ -1,3 +1,27 @@
+@mixin container() {
+	display: flex;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+@mixin sidebar() {
+	display: flex;
+	padding: 10px;
+		width: 33.3%;
+		background-color: rgba(145, 193, 252, 0.4);
+		// color: #fff;
+		@media all and (max-width: 1000px) {
+			display: none;
+			}
+
+		li {
+			list-style: none;
+		}
+}
+
+
 @mixin main-story() {
 	width: 285px;
 	margin-right: 1%

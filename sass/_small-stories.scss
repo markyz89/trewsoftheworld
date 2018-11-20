@@ -9,6 +9,12 @@
 		width: 285px;
 		margin-right: 1%;
 		@import '_small-text';
-				
+
+	}
+}
+
+@media all and (max-width: 780px) {
+	.small-stories .small-story {
+		margin: 0 auto;
 	}
 }
